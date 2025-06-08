@@ -32,6 +32,24 @@
 \let\@makecaption\MYcaption
 \makeatother
 
+% --- コードの挿入 ---
+\usepackage[newfloat]{minted}
+\captionsetup[listing]{position=bottom}
+% 背景色を指定
+\definecolor{bgcolor}{rgb}{0.95,0.95,0.92}
+
+% mintedパッケージの設定
+\setminted{
+    bgcolor=bgcolor,        % 背景色を適用
+    frame=lines,            % 枠線を表示
+    framesep=2mm,           % コードと枠線の間隔
+    fontsize=\small,        % フォントサイズ
+    linenos=true,           % 行番号を表示
+    breaklines=true,        % 行を折り返す
+    breakanywhere=true,     % どこでも改行可能に
+    breakautoindent=true    % 自動インデント
+}
+
 % --- 図表 ---
 % \usepackage{tikz} % フローチャート
 % \usepackage{makeshape} % フローチャート
