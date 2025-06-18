@@ -3,7 +3,7 @@
 %   \begin{frame} % 新しいスライドを開始
 %     \vfill % 上部に空白を作る（中央揃えのため）
 %     \centering % セクションタイトルを中央揃え
-%     \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title} 
+%     \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
 %       % セクションタイトルを強調するためのボックス
 %       \usebeamerfont{title} % タイトルのフォント設定
 %       \insertsectionhead\par % セクション名を挿入
@@ -12,11 +12,12 @@
 %   \end{frame}
 % }
 
-
-\AtBeginSection[]{ \begin{frame}\frametitle{\thesection. \insertsectionhead} % セクション番号とセクション名を表示
-\tableofcontents[currentsection, hideothersubsections] % 該当セクションだけ強調表示, 他のsubsectionは表示しない
+\AtBeginSection[]{
+    \begin{frame}\frametitle{\thesection. \insertsectionhead} % セクション番号とセクション名を表示
+        \tableofcontents[currentsection, hideothersubsections] % 該当セクションだけ強調表示, 他のsubsectionは表示しない
 \end{frame} }
 
-\AtBeginSubsection[]{ \begin{frame}\frametitle{\thesection.\thesubsection \insertsubsectionhead} % セクション番号.サブセクション番号 サブセクション名を表示
-\tableofcontents[currentsection, currentsubsection] % 該当セクションとサブセクションを強調
+\AtBeginSubsection[]{
+    \begin{frame}\frametitle{\thesection.\thesubsection \insertsubsectionhead} % セクション番号.サブセクション番号 サブセクション名を表示
+        \tableofcontents[currentsection, currentsubsection] % 該当セクションとサブセクションを強調
 \end{frame}}
