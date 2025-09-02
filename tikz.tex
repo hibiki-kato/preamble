@@ -1,0 +1,71 @@
+% TikZ settings for illustrations
+\usepackage{tikz}
+\usepackage{makeshape} % フローチャート
+\usetikzlibrary{arrows.meta, calc, decorations.pathreplacing, shapes, arrows}
+
+% Define styles for the double pendulum
+\tikzset{
+    pendulum/.style={thick},
+    mass/.style={circle, draw, fill=black, minimum size=5pt, inner sep=0pt},
+    pivot/.style={circle, draw, fill=black, minimum size=3pt, inner sep=0pt}
+}
+
+% Tikz ブロックスタイルの定義
+\tikzstyle{decision}
+=
+[diamond,
+    draw,
+    fill=blue!20,
+    text
+    width=6em,
+    text
+    badly
+    centered,
+    node
+    distance=3cm,
+    inner
+sep=0pt]
+
+\tikzstyle{block}
+=
+[rectangle,
+    draw,
+    fill=blue!20,
+    text
+    width=9em,
+    text
+    centered,
+    rounded
+    corners,
+    minimum
+height=4em]
+
+\tikzstyle{block2}
+=
+[rectangle,
+    draw,
+    fill=yellow!20,
+    text
+    width=9em,
+    text
+    centered,
+    rounded
+    corners,
+    minimum
+height=4em]
+
+\tikzstyle{line}
+=
+[draw,
+-latex']
+
+\tikzstyle{cloud}
+=
+[draw,
+    ellipse,fill=red!20,
+    text
+    width=7em,
+    node
+    distance=3cm,
+    minimum
+height=3em]

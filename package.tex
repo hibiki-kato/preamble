@@ -1,3 +1,5 @@
+% --- アブストラクト ---
+\usepackage[addtotoc]{abstract}
 % --- 文章の装飾・強調 ---
 \usepackage[normalem]{ulem} % 取り消し線、下線などの装飾
 \usepackage{appendix} % 付録の設定
@@ -5,7 +7,7 @@
 
 % --- 数式関連 ---
 \usepackage{amsmath, amssymb} % 数式の拡張
-\usepackage{amsthm} % 定理環境
+\usepackage{amsthm} % 定理環境の拡張
 \usepackage{bm} % 太字ベクトル
 
 % --- マクロ・レイアウト ---
@@ -49,64 +51,3 @@
     breakanywhere=true,     % どこでも改行可能に
     breakautoindent=true    % 自動インデント
 }
-
-% --- 図表 ---
-% \usepackage{tikz} % フローチャート
-% \usepackage{makeshape} % フローチャート
-% \usetikzlibrary{shapes, arrows} % フローチャート
-
-% % Tikz ブロックスタイルの定義
-% \tikzstyle{decision}
-% =
-% [diamond,
-%     draw,
-%     fill=blue!20,
-%     text
-%     width=6em,
-%     text
-%     badly
-%     centered,
-%     node
-%     distance=3cm,
-%     inner
-% sep=0pt]
-% \tikzstyle{block}
-% =
-% [rectangle,
-%     draw,
-%     fill=blue!20,
-%     text
-%     width=9em,
-%     text
-%     centered,
-%     rounded
-%     corners,
-%     minimum
-% height=4em]
-% \tikzstyle{block2}
-% =
-% [rectangle,
-%     draw,
-%     fill=yellow!20,
-%     text
-%     width=9em,
-%     text
-%     centered,
-%     rounded
-%     corners,
-%     minimum
-% height=4em]
-% \tikzstyle{line}
-% =
-% [draw,
-% -latex']
-% \tikzstyle{cloud}
-% =
-% [draw,
-%     ellipse,fill=red!20,
-%     text
-%     width=7em,
-%     node
-%     distance=3cm,
-%     minimum
-% height=3em]
