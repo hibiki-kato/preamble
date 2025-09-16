@@ -1,0 +1,41 @@
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on the decimal point
+\usepackage{bm}% bold math
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{etoolbox}
+
+%%%User define
+\usepackage{bm}
+%\usepackage{diagbox}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{notes2bib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{mathtools}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage[normalem]{ulem}
+\usepackage[section]{placeins} %FloatBarrier
+% \usepackage{parskip} %改パラグラフした時の垂直スペースを指定
+\usepackage{psfrag} %gnuplot で使用した文字をlatex風に変更
+\usepackage{lineno}
+\usepackage[caption=false]{subfig}
+\usepackage{cases}
+
+\setlength{\parindent}{15pt} % インデントの設定
+\setlength{\parskip}{6pt} % 段落間のスペースの設定
+
+%% Apr 2021: AIP requests that the corresponding
+%% email to be moved after the affiliations
+\makeatletter
+\def\@email#1#2{%
+\endgroup \patchcmd{\titleblock@produce} {\frontmatter@RRAPformat} {\frontmatter@RRAPformat{\produce@RRAP{*#1\href{mailto:#2}{#2}}}\frontmatter@RRAPformat} {}{} }%
+\makeatother
