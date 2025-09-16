@@ -13,7 +13,6 @@ This repository contains the preamble of the latex and beamer. Just include the 
 - `commands.tex`: Contains the custom commands used in the document.
 - `beamer_preamble.tex`: Contains the preamble specific for beamer presentations.
 - `tikz.tex`: Contains TikZ settings for drawing diagrams, such as pendulums.
-
-
-
+- `Luatex.tex`: Contains settings for using LuaTeX engine.
+- `REVtex.tex`: Contains settings for using REVTeX document class.
 
