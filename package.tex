@@ -38,6 +38,23 @@
 \makeatother
 
 % --- コードの挿入 ---
+\usepackage{listings}
+\lstdefinestyle{tmy}{
+    backgroundcolor=\color{bgcolor},
+    frame=lines,
+    framesep=2mm,
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numbersep=6pt,
+    breaklines=true,
+    breakatwhitespace=true,
+    captionpos=b,
+    keywordstyle=\color{Blue}\bfseries,
+    commentstyle=\color{Gray},
+    stringstyle=\color{Maroon}
+}
+\lstset{style=tmy}
+
 \usepackage[newfloat]{minted}
 \captionsetup[listing]{position=bottom}
 % 背景色を指定
