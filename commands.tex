@@ -1,4 +1,5 @@
 % 数学環境
+% 短縮コマンド(カウンターあり)
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{prop}[thm]{Proposition}
@@ -10,6 +11,16 @@
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem*{claim}{Claim}
+% カウンターなし
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{remarks}{Remarks}
+\newtheorem*{questions}{Questions}
+\newtheorem*{problems}{Problems}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemma}{Lemma}
 
 %ショートカット
 %latexコマンド
@@ -42,10 +53,12 @@
 \newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
 \newcommand{\ip}[2]{\langle #1, #2 \rangle}
 \newcommand{\deter}[1]{\det\left(#1\right)}
+\newcommand{\sign}[1]{\text{sign}(#1)}
 \newcommand{\rank}[1]{{\sf rank}(#1)}
 \newcommand{\trace}[1]{{\sf trace}(#1)}
 \newcommand{\diag}[1]{{\sf diag}(#1)}
-\newcommand{\Span}[1]{{\sf span}(#1)}
+\newcommand{\Span}[1]{{\sf Span}(#1)}
+\newcommand{\Ran}[1]{{\sf Ran}(#1)}
 \newcommand{\Range}[1]{{\sf Range}(#1)}
 \newcommand{\Ker}[1]{{\sf Ker}(#1)}
 \newcommand{\Null}[1]{{\sf Null}(#1)}
