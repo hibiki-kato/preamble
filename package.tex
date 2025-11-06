@@ -20,7 +20,6 @@
 \usepackage{lineno} % 行番号
 \usepackage{lscape} % 横向きページ
 \usepackage{longtable} % 複数ページにわたる表
-\usepackage{caption} % キャプションのカスタマイズ
 
 % --- 色の設定 ---
 \usepackage[dvipsnames, svgnames, table]{xcolor}
@@ -30,6 +29,7 @@
 % --- 画像・図表 ---
 \usepackage{graphicx} % 画像の挿入
 \usepackage{pdfpages}
+\usepackage{caption} % キャプションのカスタマイズ
 \usepackage{subcaption} % 図のサブキャプション
 \captionsetup{compatibility=false} % キャプションの互換性設定
 \usepackage{here} %Hオプション
@@ -40,6 +40,10 @@
 \makeatletter
 \let\@makecaption\MYcaption
 \makeatother
+
+% --- アルゴリズム ---
+\usepackage{algorithm} % アルゴリズム環境
+\usepackage{algpseudocode} % アルゴリズムの擬似コード環境
 
 % --- コードの挿入 ---
 \usepackage{listings}
