@@ -1,0 +1,7 @@
+# ----
+# Automatically Generated .dropboxignore file at 2025年 11月 8日 土曜日 00時40分09秒 EST
+# ----
+# Ignore files generated
+.DS_Store
+.output
+# ----
